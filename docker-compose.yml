@@ -1,0 +1,12 @@
+version: '3'
+services:
+  chromium:
+    image: jr-app-chromium
+    environment:
+     - VNC_PASSWORD=jr
+     - DISPLAY_WIDTH=1462
+     - DISPLAY_HEIGHT=820
+    volumes:
+      - ~/chromium:/app/:rw
+    ports:
+     - 5801:5800
